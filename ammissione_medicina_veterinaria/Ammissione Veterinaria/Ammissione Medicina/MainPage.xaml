@@ -1,0 +1,187 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Ammissione_Medicina.MainPage"
+    xmlns:rma="clr-namespace:RateMyApp.Controls;assembly=RateMyApp"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:telerikCore="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
+    xmlns:ads="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" shell:SystemTray.BackgroundColor="DarkGreen">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+        <!--Controllo Panorama-->
+
+        <!--Controllo Panorama-->
+        <controls:Panorama Title="ammissione veterinaria">
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="/img/greenTex.jpg"/>
+            </controls:Panorama.Background>
+
+            <!--Elemento Panorama uno-->
+
+            <!--Elemento Panorama uno-->
+
+            <!--Elemento Panorama uno-->
+            <controls:PanoramaItem x:Name="novità" Header="novità">
+                <!--Elenco a doppia riga con testo a capo-->
+                <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,12,0">
+                    <Image x:Name="logo" HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="277" Source="/vet.png" Stretch="Fill" Margin="66,129,0,0"/>
+
+                    <Button Content="carica notizie" Height="72" HorizontalAlignment="Left" Margin="9,6,0,0" x:Name="loadFeedButton" VerticalAlignment="Top" Width="399" Click="loadFeedButton_Click" />
+
+                    <ListBox x:Name="feedListBox" HorizontalAlignment="Left" Margin="0,100,0,0" Width="408" ScrollViewer.VerticalScrollBarVisibility="Auto" SelectionChanged="feedListBox_SelectionChanged" Height="366" VerticalAlignment="Top">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Top">
+                                    <TextBlock TextDecorations="Underline" FontSize="24" x:Name="feedTitle" TextWrapping="Wrap" Margin="12,0,0,0" HorizontalAlignment="Left" Foreground="{StaticResource PhoneAccentBrush}" Text="{Binding Title.Text, Converter={StaticResource RssTextTrimmer}}" />
+                                    <TextBlock x:Name="feedSummary" TextWrapping="Wrap" Margin="12,0,0,0" Text="{Binding Summary.Text, Converter={StaticResource RssTextTrimmer}}" />
+                                    <TextBlock x:Name="feedPubDate" Foreground="{StaticResource PhoneSubtleBrush}" Margin="12,0,0,10" Text="{Binding PublishDate.DateTime}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <Border BorderBrush="{StaticResource PhoneSubtleBrush}" BorderThickness="1" Height="2" HorizontalAlignment="Left" Margin="20,88,0,0" x:Name="border1" VerticalAlignment="Top" Width="438" />
+                </Grid>
+
+            </controls:PanoramaItem>
+
+            <!--Utilizzare 'Orientation="Horizontal"' per abilitare un riquadro disposto orizzontalmente-->
+            <controls:PanoramaItem x:Name="servizi" Header="servizi">
+                <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" telerikCore:InteractionEffectManager.IsInteractionEnabled="True">
+                        <StackPanel x:Name="bandoPannel" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="420" Orientation="Horizontal" Background="White" Tap="bandoPannel_Tap">
+                            <Grid HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/img/bando.png"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="Black" Margin="10,0,0,0">
+                            	<Run Text="Bando"/>
+                            	<LineBreak/>
+                            	<Run FontSize="24" Text="Consulta il bando di"/>
+                            	<LineBreak/>
+                            	<Run FontSize="24" Text="ammissione dell'anno"/>
+                            	<LineBreak/>
+                            	<Run FontSize="24" Text="2014"/>
+                            </TextBlock>
+                        </StackPanel>
+                        <StackPanel x:Name="provePannel" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="420" Orientation="Horizontal" Background="White" Margin="0,10,0,0" Tap="provePannel_Tap">
+                            <Grid HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/img/prove.png"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="Black" Margin="10,0,0,0">
+                            	<Run Text="Prove scritte"/>
+                            	<LineBreak/>
+                            	<Run FontSize="24" Text="Consulta le prove scritte"/>
+                            	<LineBreak/>
+                            	<Run FontSize="24" Text="trascorse con realative"/>
+                            	<LineBreak/>
+                            	<Run FontSize="24" Text="soluzioni"/>
+                            </TextBlock>
+                        </StackPanel>
+                        <StackPanel x:Name="datePannel" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="420" Orientation="Horizontal" Background="White" Margin="0,10,0,0" Tap="datePannel_Tap">
+                            <Grid HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/img/date.png"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="Black" Margin="10,0,0,0">
+                        		<Run Text="Date e info test"/>
+                        		<LineBreak/>
+                        		<Run FontSize="24" Text="Date ufficiali e modalità"/>
+                        		<LineBreak/>
+                        		<Run FontSize="24" Text="di svolgimento"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+                <!--Elenco a doppia riga con segnaposto per immagine e testo a capo-->
+            </controls:PanoramaItem>
+            <controls:PanoramaItem x:Name="info" Header="informazioni">
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="432" Height="498">
+                    <ScrollViewer HorizontalAlignment="Left" Height="201" VerticalAlignment="Top" Width="432" Margin="0,69,0,0">
+                        <TextBlock TextWrapping="Wrap" Text="Grazie a questa app rimarrai sempre aggiornato con le novità, bandi, date, punteggi minimi e tanto altro ancora riguardante il test nazionale d'ammissione a veterinaria 2014/2015." FontSize="24"/>
+                    </ScrollViewer>
+                    <ads:AdControl ApplicationId="554b4183-c9e9-41f4-96ed-543a0ee0730e" AdUnitId="10711781" HorizontalAlignment="Left" Height="50" Margin="48,0,0,0" VerticalAlignment="Top" Width="320"/>
+                    <Button x:Name="votaApp" Content="vota l'app" HorizontalAlignment="Left" Margin="0,275,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.512,0.667" Width="422" Click="votaApp_Click"/>
+                    <StackPanel x:Name="rtsoft" HorizontalAlignment="Left" Height="100" Margin="10,352,0,0" VerticalAlignment="Top" Width="402" Tap="rtsoft_Tap" telerikCore:InteractionEffectManager.IsInteractionEnabled="True">
+                        <StackPanel Height="100" Orientation="Horizontal" Background="White" Margin="0,0,-14,0">
+                            <Grid Width="100">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/img/saro.png"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Margin="10,0,0,0" Foreground="Black" FontSize="30" FontWeight="Bold" Width="297" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            	<Run Text="Rosario Terranova"/>
+                            	<LineBreak/>
+                            	<Run FontWeight="Normal" FontSize="18" Text="Clicca qui per info sulle mie app"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <!--Elenco a doppia riga con segnaposto per immagine e testo a capo-->
+            </controls:PanoramaItem>
+        </controls:Panorama>
+        <rma:FeedbackOverlay x:Name="votami" Grid.RowSpan="2"
+            EnableAnimation="True"
+            RatingTitle="Ti piace questa app?"
+            RatingMessage1="Sarei felice se votassi la mi app con 5 stelle, mi aiuteresti a dargli più visibilità in modo da lavorarci di più e rilasciare più frequentemente aggiornamenti e nuove funzioni. Grazie!"
+            RatingMessage2="Sembra che usi molto questa applicazione! Perché non contribuisci a migliorarla votandola 5 stelle sullo store? Grazie!"
+            RatingYes="Dai 5 stelle"
+            RatingNo="No, grazie"
+            FeedbackTitle="Posso fare di meglio"
+            FeedbackMessage1="Mi dispiace che non hai ancora votato questa app. I tuoi suggerimenti sono preziosi per me."
+            FeedbackYes="Dai feedback"
+            FeedbackNo="No, grazie"
+            FeedbackTo="rosario.terranova@outlook.it"
+            FeedbackSubject="Feedback Ammissione Medicina"
+            FeedbackBody="[Il tuo feedback qui]
+                ---------------------------------
+                Device Name: {0}
+                Device Manufacturer: {1}
+                Device Firmware Version: {2}
+                Device Hardware Version: {3}
+                Application Version: {4}
+                ---------------------------------"
+            CompanyName="Rosario Terranova"
+            ApplicationName="Ammissione medicina"
+            FirstCount="5"
+            SecondCount="10"
+            CountDays="False"
+        />
+    </Grid>
+</phone:PhoneApplicationPage>

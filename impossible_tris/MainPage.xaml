@@ -1,0 +1,486 @@
+﻿<phone:PhoneApplicationPage
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:eim="clr-namespace:Microsoft.Expression.Interactivity.Media;assembly=Microsoft.Expression.Interactions" 
+    x:Class="Tris_Classic.MainPage"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="Storyboard1" RepeatBehavior="Forever" AutoReverse="True">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle11">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle12">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle13">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle14">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle15">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle17">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle18">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle19">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle20">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle21">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle22">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle23">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle24">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle25">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle26">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle27">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle28">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle29">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle30">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle31">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle32">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle33">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle34">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle35">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle36">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle37">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle38">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle39">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle40">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle41">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle42">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle43">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle44">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="rectangle45">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="94"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+    <phone:PhoneApplicationPage.FontFamily>
+        <StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+    </phone:PhoneApplicationPage.FontFamily>
+    <phone:PhoneApplicationPage.FontSize>
+        <StaticResource ResourceKey="PhoneFontSizeNormal"/>
+    </phone:PhoneApplicationPage.FontSize>
+    <phone:PhoneApplicationPage.Foreground>
+        <StaticResource ResourceKey="PhoneForegroundBrush"/>
+    </phone:PhoneApplicationPage.Foreground>
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:RotateTransition />
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:RotateTransition />
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:RotateTransition />
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:RotateTransition />
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <eim:ControlStoryboardAction Storyboard="{StaticResource Storyboard1}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/quaderna.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contiene il nome dell'applicazione e il titolo della pagina-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="PageTitle" Margin="0,-7,10,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="Black">
+				<Run Text="Impossible Tris"/>
+            </TextBlock>
+        </StackPanel>
+
+        <!--ContentPanel - inserire ulteriore contenuto qui-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button x:Name="singleButton" Content="Giocatore singolo" HorizontalAlignment="Left" Margin="93,205,0,0" VerticalAlignment="Top" BorderBrush="Black" Foreground="Black" Click="singleButton_Click" Width="253"/>
+            <Button x:Name="multiButton" Content="Due giocatori" HorizontalAlignment="Left" Margin="93,365,0,0" VerticalAlignment="Top" Width="253" BorderBrush="Black" Foreground="Black" Click="multiButton_Click"/>
+            <Button x:Name="infoButton" Content="Informazioni" HorizontalAlignment="Left" Margin="93,445,0,0" VerticalAlignment="Top" Width="253" BorderBrush="Black" Foreground="Black" Click="infoButton_Click"/>
+            <Image Margin="116,-32,114,440" Source="/logo.png" Stretch="Fill"/>
+            <Button x:Name="facileButton" Content="Modalità facile" HorizontalAlignment="Left" Margin="93,285,0,0" VerticalAlignment="Top" Width="253" BorderBrush="Black" Foreground="Black" Click="facileButton_Click"/>
+        </Grid>
+        <Rectangle x:Name="rectangle" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-43,23,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle1" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-9,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle2" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="40,103,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle3" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-32,598,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle4" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="61,547,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle5" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="22,495,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle6" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-5,398,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle7" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="308,439,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle8" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="240,598,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle9" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="298,521,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle10" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="384,399,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle11" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="385,562,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle12" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="30,291,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle13" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="259,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle14" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="357,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle15" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="398,175,-4,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle17" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="419,344,-25,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle18" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="401,264,-7,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle19" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="361,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle20" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-98,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle21" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-140,164,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle22" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="457,23,-63,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle23" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-97,251,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle24" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-67,344,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle25" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-73,463,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle26" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-55,559,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle27" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-154,398,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle28" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="509,70,-115,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle29" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="137,580,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle30" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="527,202,-133,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle31" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="445,496,-51,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle32" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="530,413,-136,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle33" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="508,299,-114,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle34" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-2,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle35" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="136,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle36" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="199,536,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle37" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-149,7,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle38" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-161,116,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle39" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-166,290,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle40" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-131,496,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle41" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="-155,571,0,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle42" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="580,134,-186,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle43" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="547,133,-153,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle44" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="538,598,-144,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle45" Fill="#FF000004" HorizontalAlignment="Left" Height="1" Margin="550,527,-156,0" Stroke="Black" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+    </Grid>
+
+</phone:PhoneApplicationPage>

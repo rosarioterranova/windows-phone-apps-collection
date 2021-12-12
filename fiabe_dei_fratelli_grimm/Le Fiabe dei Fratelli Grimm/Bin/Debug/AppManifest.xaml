@@ -1,0 +1,14 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Le Fiabe dei Fratelli Grimm" EntryPointType="Le_Fiabe_dei_Fratelli_Grimm.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Le Fiabe dei Fratelli Grimm" Source="Le Fiabe dei Fratelli Grimm.dll" />
+    <AssemblyPart x:Name="Microsoft.Advertising.Mobile" Source="Microsoft.Advertising.Mobile.dll" />
+    <AssemblyPart x:Name="microsoft.advertising.mobile.ui" Source="microsoft.advertising.mobile.ui.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Maps" Source="Microsoft.Phone.Controls.Maps.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Behaviors" Source="Telerik.Windows.Behaviors.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Primitives" Source="Telerik.Windows.Controls.Primitives.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Core" Source="Telerik.Windows.Core.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+  </Deployment.Parts>
+</Deployment>

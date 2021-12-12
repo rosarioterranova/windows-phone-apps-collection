@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F97EFD11-4AFB-4D8C-A55E-0636237D5A74}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Le_Fiabe_dei_Fratelli_Grimm</RootNamespace>
+    <AssemblyName>Le Fiabe dei Fratelli Grimm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Le_Fiabe_dei_Fratelli_Grimm.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Le_Fiabe_dei_Fratelli_Grimm.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="microsoft.advertising.mobile.ui, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Devices.Sensors" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="Telerik.Windows.Behaviors, Version=2013.3.1317.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Primitives, Version=2013.3.1317.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Core, Version=2013.3.1317.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiabe.xaml.cs">
+      <DependentUpon>Fiabe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Fiabe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <DesignData Include="SampleData\MainViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="copertineFiabe\000.jpg" />
+    <Content Include="copertineFiabe\001.jpg" />
+    <Content Include="copertineFiabe\002.jpg" />
+    <Content Include="copertineFiabe\003.jpg" />
+    <Content Include="copertineFiabe\004.jpg" />
+    <Content Include="copertineFiabe\005.jpg" />
+    <Content Include="copertineFiabe\006.jpg" />
+    <Content Include="copertineFiabe\007.jpg" />
+    <Content Include="copertineFiabe\008.jpg" />
+    <Content Include="copertineFiabe\009.jpg" />
+    <Content Include="copertineFiabe\010.jpg" />
+    <Content Include="copertineFiabe\011.jpg" />
+    <Content Include="copertineFiabe\012.jpg" />
+    <Content Include="copertineFiabe\013.jpg" />
+    <Content Include="copertineFiabe\014.jpg" />
+    <Content Include="copertineFiabe\015.jpg" />
+    <Content Include="copertineFiabe\016.jpg" />
+    <Content Include="copertineFiabe\017.jpg" />
+    <Content Include="copertineFiabe\018.jpg" />
+    <Content Include="copertineFiabe\019.jpg" />
+    <Content Include="copertineFiabe\020.jpg" />
+    <Content Include="copertineFiabe\021.jpg" />
+    <Content Include="copertineFiabe\023.jpg" />
+    <Content Include="copertineFiabe\024.jpg" />
+    <Content Include="copertineFiabe\025.jpg" />
+    <Content Include="copertineFiabe\026.jpg" />
+    <Content Include="copertineFiabe\027.jpg" />
+    <Content Include="copertineFiabe\028.jpg" />
+    <Content Include="copertineFiabe\029.jpg" />
+    <Content Include="copertineFiabe\030.jpg" />
+    <Content Include="copertineFiabe\031.jpg" />
+    <Content Include="copertineFiabe\032.jpg" />
+    <Content Include="copertineFiabe\033.jpg" />
+    <Content Include="copertineFiabe\034.jpg" />
+    <Content Include="copertineFiabe\036.jpg" />
+    <Content Include="copertineFiabe\037.jpg" />
+    <Content Include="copertineFiabe\039.jpg" />
+    <Content Include="copertineFiabe\044.jpg" />
+    <Content Include="copertineFiabe\047.jpg" />
+    <Content Include="copertineFiabe\049.jpg" />
+    <Content Include="copertineFiabe\050.jpg" />
+    <Content Include="copertineFiabe\052.jpg" />
+    <Content Include="copertineFiabe\053.jpg" />
+    <Content Include="copertineFiabe\055.jpg" />
+    <Content Include="copertineFiabe\059.jpg" />
+    <Content Include="copertineFiabe\062.jpg" />
+    <Content Include="copertineFiabe\063.jpg" />
+    <Content Include="copertineFiabe\064.jpg" />
+    <Content Include="copertineFiabe\066.jpg" />
+    <Content Include="copertineFiabe\069.jpg" />
+    <Content Include="copertineFiabe\082.jpg" />
+    <Content Include="copertineFiabe\083.jpg" />
+    <Content Include="copertineFiabe\103.jpg" />
+    <Content Include="copertineFiabe\108.jpg" />
+    <Content Include="copertineFiabe\125.jpg" />
+    <Content Include="copertineFiabe\153.jpg" />
+    <Content Include="copertineFiabe\169.jpg" />
+    <Content Include="copertineFiabe\172.jpg" />
+    <Content Include="copertineFiabe\179.jpg" />
+    <Content Include="copertineFiabe\193.jpg" />
+    <Content Include="copertineFiabe\200.jpg" />
+    <Content Include="copertineFiabe\index.png" />
+    <Content Include="Fiabe\001.txt" />
+    <Content Include="Fiabe\002.txt" />
+    <Content Include="Fiabe\003.txt" />
+    <Content Include="Fiabe\004.txt" />
+    <Content Include="Fiabe\005.txt" />
+    <Content Include="Fiabe\006.txt" />
+    <Content Include="Fiabe\007.txt" />
+    <Content Include="Fiabe\008.txt" />
+    <Content Include="Fiabe\009.txt" />
+    <Content Include="Fiabe\010.txt" />
+    <Content Include="Fiabe\011.txt" />
+    <Content Include="Fiabe\012.txt" />
+    <Content Include="Fiabe\013.txt" />
+    <Content Include="Fiabe\014.txt" />
+    <Content Include="Fiabe\015.txt" />
+    <Content Include="Fiabe\016.txt" />
+    <Content Include="Fiabe\017.txt" />
+    <Content Include="Fiabe\018.txt" />
+    <Content Include="Fiabe\019.txt" />
+    <Content Include="Fiabe\020.txt" />
+    <Content Include="Fiabe\021.txt" />
+    <Content Include="Fiabe\022.txt" />
+    <Content Include="Fiabe\023.txt" />
+    <Content Include="Fiabe\024.txt" />
+    <Content Include="Fiabe\025.txt" />
+    <Content Include="Fiabe\026.txt" />
+    <Content Include="Fiabe\027.txt" />
+    <Content Include="Fiabe\028.txt" />
+    <Content Include="Fiabe\029.txt" />
+    <Content Include="Fiabe\030.txt" />
+    <Content Include="Fiabe\031.txt" />
+    <Content Include="Fiabe\032.txt" />
+    <Content Include="Fiabe\033.txt" />
+    <Content Include="Fiabe\034.txt" />
+    <Content Include="Fiabe\035.txt" />
+    <Content Include="Fiabe\036.txt" />
+    <Content Include="Fiabe\037.txt" />
+    <Content Include="Fiabe\038.txt" />
+    <Content Include="Fiabe\039.txt" />
+    <Content Include="Fiabe\040.txt" />
+    <Content Include="Fiabe\041.txt" />
+    <Content Include="Fiabe\042.txt" />
+    <Content Include="Fiabe\043.txt" />
+    <Content Include="Fiabe\044.txt" />
+    <Content Include="Fiabe\045.txt" />
+    <Content Include="Fiabe\046.txt" />
+    <Content Include="Fiabe\047.txt" />
+    <Content Include="Fiabe\048.txt" />
+    <Content Include="Fiabe\049.txt" />
+    <Content Include="Fiabe\050.txt" />
+    <Content Include="Fiabe\051.txt" />
+    <Content Include="Fiabe\052.txt" />
+    <Content Include="Fiabe\053.txt" />
+    <Content Include="Fiabe\054.txt" />
+    <Content Include="Fiabe\055.txt" />
+    <Content Include="Fiabe\056.txt" />
+    <Content Include="Fiabe\057.txt" />
+    <Content Include="Fiabe\058.txt" />
+    <Content Include="Fiabe\059.txt" />
+    <Content Include="Fiabe\060.txt" />
+    <Content Include="Fiabe\061.txt" />
+    <Content Include="Fiabe\062.txt" />
+    <Content Include="Fiabe\063.txt" />
+    <Content Include="Fiabe\064.txt" />
+    <Content Include="Fiabe\065.txt" />
+    <Content Include="Fiabe\066.txt" />
+    <Content Include="Fiabe\067.txt" />
+    <Content Include="Fiabe\068.txt" />
+    <Content Include="Fiabe\069.txt" />
+    <Content Include="Fiabe\070.txt" />
+    <Content Include="Fiabe\071.txt" />
+    <Content Include="Fiabe\072.txt" />
+    <Content Include="Fiabe\073.txt" />
+    <Content Include="Fiabe\074.txt" />
+    <Content Include="Fiabe\075.txt" />
+    <Content Include="Fiabe\076.txt" />
+    <Content Include="Fiabe\077.txt" />
+    <Content Include="Fiabe\078.txt" />
+    <Content Include="Fiabe\079.txt" />
+    <Content Include="Fiabe\080.txt" />
+    <Content Include="Fiabe\081.txt" />
+    <Content Include="Fiabe\082.txt" />
+    <Content Include="Fiabe\083.txt" />
+    <Content Include="Fiabe\084.txt" />
+    <Content Include="Fiabe\085.txt" />
+    <Content Include="Fiabe\086.txt" />
+    <Content Include="Fiabe\087.txt" />
+    <Content Include="Fiabe\088.txt" />
+    <Content Include="Fiabe\089.txt" />
+    <Content Include="Fiabe\090.txt" />
+    <Content Include="Fiabe\091.txt" />
+    <Content Include="Fiabe\092.txt" />
+    <Content Include="Fiabe\093.txt" />
+    <Content Include="Fiabe\094.txt" />
+    <Content Include="Fiabe\095.txt" />
+    <Content Include="Fiabe\096.txt" />
+    <Content Include="Fiabe\097.txt" />
+    <Content Include="Fiabe\098.txt" />
+    <Content Include="Fiabe\099.txt" />
+    <Content Include="Fiabe\100.txt" />
+    <Content Include="Fiabe\101.txt" />
+    <Content Include="Fiabe\102.txt" />
+    <Content Include="Fiabe\103.txt" />
+    <Content Include="Fiabe\104.txt" />
+    <Content Include="Fiabe\105.txt" />
+    <Content Include="Fiabe\106.txt" />
+    <Content Include="Fiabe\107.txt" />
+    <Content Include="Fiabe\108.txt" />
+    <Content Include="Fiabe\109.txt" />
+    <Content Include="Fiabe\110.txt" />
+    <Content Include="Fiabe\111.txt" />
+    <Content Include="Fiabe\112.txt" />
+    <Content Include="Fiabe\113.txt" />
+    <Content Include="Fiabe\114.txt" />
+    <Content Include="Fiabe\115.txt" />
+    <Content Include="Fiabe\116.txt" />
+    <Content Include="Fiabe\117.txt" />
+    <Content Include="Fiabe\118.txt" />
+    <Content Include="Fiabe\119.txt" />
+    <Content Include="Fiabe\120.txt" />
+    <Content Include="Fiabe\121.txt" />
+    <Content Include="Fiabe\122.txt" />
+    <Content Include="Fiabe\123.txt" />
+    <Content Include="Fiabe\124.txt" />
+    <Content Include="Fiabe\125.txt" />
+    <Content Include="Fiabe\126.txt" />
+    <Content Include="Fiabe\127.txt" />
+    <Content Include="Fiabe\128.txt" />
+    <Content Include="Fiabe\129.txt" />
+    <Content Include="Fiabe\130.txt" />
+    <Content Include="Fiabe\131.txt" />
+    <Content Include="Fiabe\132.txt" />
+    <Content Include="Fiabe\133.txt" />
+    <Content Include="Fiabe\134.txt" />
+    <Content Include="Fiabe\135.txt" />
+    <Content Include="Fiabe\136.txt" />
+    <Content Include="Fiabe\137.txt" />
+    <Content Include="Fiabe\138.txt" />
+    <Content Include="Fiabe\139.txt" />
+    <Content Include="Fiabe\140.txt" />
+    <Content Include="Fiabe\141.txt" />
+    <Content Include="Fiabe\142.txt" />
+    <Content Include="Fiabe\143.txt" />
+    <Content Include="Fiabe\144.txt" />
+    <Content Include="Fiabe\145.txt" />
+    <Content Include="Fiabe\146.txt" />
+    <Content Include="Fiabe\147.txt" />
+    <Content Include="Fiabe\148.txt" />
+    <Content Include="Fiabe\149.txt" />
+    <Content Include="Fiabe\150.txt" />
+    <Content Include="Fiabe\151.txt" />
+    <Content Include="Fiabe\152.txt" />
+    <Content Include="Fiabe\153.txt" />
+    <Content Include="Fiabe\154.txt" />
+    <Content Include="Fiabe\155.txt" />
+    <Content Include="Fiabe\156.txt" />
+    <Content Include="Fiabe\157.txt" />
+    <Content Include="Fiabe\158.txt" />
+    <Content Include="Fiabe\159.txt" />
+    <Content Include="Fiabe\160.txt" />
+    <Content Include="Fiabe\161.txt" />
+    <Content Include="Fiabe\162.txt" />
+    <Content Include="Fiabe\163.txt" />
+    <Content Include="Fiabe\164.txt" />
+    <Content Include="Fiabe\165.txt" />
+    <Content Include="Fiabe\166.txt" />
+    <Content Include="Fiabe\167.txt" />
+    <Content Include="Fiabe\168.txt" />
+    <Content Include="Fiabe\169.txt" />
+    <Content Include="Fiabe\170.txt" />
+    <Content Include="Fiabe\171.txt" />
+    <Content Include="Fiabe\172.txt" />
+    <Content Include="Fiabe\173.txt" />
+    <Content Include="Fiabe\174.txt" />
+    <Content Include="Fiabe\175.txt" />
+    <Content Include="Fiabe\176.txt" />
+    <Content Include="Fiabe\177.txt" />
+    <Content Include="Fiabe\178.txt" />
+    <Content Include="Fiabe\179.txt" />
+    <Content Include="Fiabe\180.txt" />
+    <Content Include="Fiabe\181.txt" />
+    <Content Include="Fiabe\182.txt" />
+    <Content Include="Fiabe\183.txt" />
+    <Content Include="Fiabe\184.txt" />
+    <Content Include="Fiabe\185.txt" />
+    <Content Include="Fiabe\186.txt" />
+    <Content Include="Fiabe\187.txt" />
+    <Content Include="Fiabe\188.txt" />
+    <Content Include="Fiabe\189.txt" />
+    <Content Include="Fiabe\190.txt" />
+    <Content Include="Fiabe\191.txt" />
+    <Content Include="Fiabe\192.txt" />
+    <Content Include="Fiabe\193.txt" />
+    <Content Include="Fiabe\194.txt" />
+    <Content Include="Fiabe\195.txt" />
+    <Content Include="Fiabe\196.txt" />
+    <Content Include="Fiabe\197.txt" />
+    <Content Include="Fiabe\198.txt" />
+    <Content Include="Fiabe\199.txt" />
+    <Content Include="Fiabe\200.txt" />
+    <Content Include="Fiabe\201.txt" />
+    <Content Include="Fiabe\202.txt" />
+    <Content Include="Fiabe\203.txt" />
+    <Content Include="Fiabe\204.txt" />
+    <Content Include="Fiabe\205.txt" />
+    <Content Include="Fiabe\206.txt" />
+    <Content Include="Fiabe\207.txt" />
+    <Content Include="Fiabe\208.txt" />
+    <Content Include="Fiabe\209.txt" />
+    <Content Include="Fiabe\210.txt" />
+    <Content Include="Fiabe\211.txt" />
+    <Content Include="icon.png" />
+    <Content Include="icon2.png" />
+    <Content Include="iconPro.png" />
+    <Content Include="iconPro1.png" />
+    <Content Include="images\back.png" />
+    <Content Include="images\dice.png" />
+    <Content Include="images\mail.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\paper_texture.jpg" />
+    <Content Include="images\search.png" />
+    <Content Include="images\sfoglia.png" />
+    <Content Include="images\store.jpg" />
+    <Content Include="images\vota.png" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

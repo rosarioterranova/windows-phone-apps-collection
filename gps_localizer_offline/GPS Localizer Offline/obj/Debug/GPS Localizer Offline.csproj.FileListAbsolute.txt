@@ -1,0 +1,6 @@
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Debug\App.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Debug\About.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Debug\MainPage.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Debug\GPS Localizer Offline.g.resources
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Debug\GPS_Localizer_Offline.Resources.AppResources.resources
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Debug\GPS Localizer Offline.csproj.GenerateResource.Cache

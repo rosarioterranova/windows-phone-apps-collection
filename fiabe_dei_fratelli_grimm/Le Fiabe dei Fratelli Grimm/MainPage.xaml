@@ -1,0 +1,1809 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Le_Fiabe_dei_Fratelli_Grimm.MainPage"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:telerikCore="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" shell:SystemTray.BackgroundColor="DarkRed">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/images/paper_texture.jpg"/>
+        </Grid.Background>
+
+        <!--Controllo Panorama-->
+        <controls:Panorama x:Name="Panorama" Title="le fiabe dei fratelli Grimm" Background="{x:Null}" Foreground="Black">
+
+            <!--Elemento Panorama uno-->
+            <controls:PanoramaItem x:Name="menu" Header="menu">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="415" Height="576" Margin="-3,-15,0,0" telerikCore:InteractionEffectManager.IsInteractionEnabled="True">
+                    <StackPanel x:Name="sfoglia" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="415" Orientation="Horizontal" Tap="sfoglia_Tap">
+                        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="/images/sfoglia.png"/>
+                            </Grid.Background>
+                        </Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="sfoglia le fiabe" VerticalAlignment="Center" FontSize="36" Foreground="Black" Margin="15,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel x:Name="vota" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="415" Orientation="Horizontal" Margin="0,15,0,0" Tap="vota_Tap">
+                        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="/images/vota.png"/>
+                            </Grid.Background>
+                        </Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="vota l'app" VerticalAlignment="Center" FontSize="36" Foreground="Black" Margin="15,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel x:Name="contattami" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="415" Orientation="Horizontal" Margin="0,15,0,0" Tap="contattami_Tap">
+                        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="/images/mail.png"/>
+                            </Grid.Background>
+                        </Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="contattami" VerticalAlignment="Center" FontSize="36" Foreground="Black" Margin="15,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel x:Name="store" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="415" Orientation="Horizontal" Margin="0,15,0,0" Tap="store_Tap">
+                        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="/images/store.jpg"/>
+                            </Grid.Background>
+                        </Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="altre mie app" VerticalAlignment="Center" FontSize="36" Foreground="Black" Margin="15,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+                <!--Elenco a doppia riga con testo a capo-->
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama due-->
+            <!--Utilizzare 'Orientation="Horizontal"' per abilitare un riquadro disposto orizzontalmente-->
+            <controls:PanoramaItem x:Name="indice" Header="indice">
+                <ScrollViewer HorizontalAlignment="Left" Height="462" VerticalAlignment="Top" Width="415">
+                    <StackPanel x:Name="pannelloIndice" HorizontalAlignment="Left" VerticalAlignment="Top" Width="415" telerikCore:InteractionEffectManager.IsInteractionEnabled="True">
+                        <StackPanel x:Name="indx001" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Tap="indx001_Tap" Margin="5,0,0,0">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/001.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il principe ranocchio" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx002" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx002_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/002.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gatto e topo in società" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx003" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx003_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/003.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La figlia della Madonna" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx004" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx004_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/004.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Storia di uno che se ne andò in cerca della paura" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx005" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx005_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/005.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il lupo e i sette caprettini" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx006" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx006_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/006.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il fedele Giovanni" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx007" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx007_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/007.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il buon affare" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx008" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx008_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/008.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Lo strano violinista" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx009" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx009_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/009.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I dodici fratelli" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx010" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx010_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/010.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gentaglia" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx011" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx011_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/011.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Fratellino e sorellina" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx012" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx012_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/012.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Raperonzolo" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx013" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx013_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/013.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre omini del bosco" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx014" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx014_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/014.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le tre filatrici" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx015" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx015_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/015.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Hänsel e Gretel" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx016" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx016_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/016.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le tre foglie della serpe" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx017" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx017_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/017.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La serpe bianca" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx018" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx018_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/018.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La pagliuzza, il carbone e il fagiolo" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx019" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx019_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/019.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il pescatore e sua moglie" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx020" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx020_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/020.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il prode piccolo sarto (Sette in un colpo)" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx021" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Tap="indx021_Tap" Margin="5,15,0,0">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/021.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Cenerentola" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx022" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx022_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'indovinello" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx023" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx023_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/023.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il topino, l'uccellino e la salsiccia" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx024" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx024_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/024.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Madama Holle" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx025" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx025_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/025.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I sette corvi" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx026" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx026_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/026.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Cappuccetto Rosso" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx027" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx027_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/027.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I musicanti di Brema" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx028" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx028_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/028.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'osso che canta" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx029" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx029_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/029.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre capelli d'oro del diavolo" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx030" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx030_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/030.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Pidocchietto e Pulcettina" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx031" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx031_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/031.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La fanciulla senza mani" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx032" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx032_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/032.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gianni testa fina" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx033" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx033_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/033.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre linguaggi" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx034" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx034_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/034.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La saggia Elsa" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx035" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx035_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il sarto in paradiso" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx036" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx036_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/036.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il tavolino magico, l'asino d'oro e il randello castigamatti" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx037" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx037_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/037.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Pollicino" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx038" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx038_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La signora volpe" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx039" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx039_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/039.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gli gnomi" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx040" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx040_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il fidanzato brigante" Width="240" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Top" Height="100"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx041" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Tap="indx021_Tap" Margin="5,15,0,0">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Messer Babau" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx042" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx042_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il compare" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx043" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx043_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Frau Trude" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx044" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx044_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/044.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Comare Morte" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx045" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx045_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il viaggio di Pollicino, il piccolo sarto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx046" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx046_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'uccello strano" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx047" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx047_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/047.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il ginepro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx048" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx048_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il vecchio Sultano" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx049" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx049_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/049.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I sei cigni" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx050" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx050_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/050.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Rosaspina" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx051" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx051_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Ucceltrovato" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx052" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx052_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/052.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il re Bazza di Tordo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="indx053" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx053_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/053.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Biancaneve" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx054" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx054_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Lo zaino, il cappellino e la cornetta" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx055" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx055_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/055.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Tremotino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx056" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx056_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il diletto Orlando" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx057" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx057_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'uccello d'oro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx058" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx058_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il cane e il passero" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx059" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx059_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/059.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Federico e Caterinella" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx060" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx060_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I due fratelli" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx061" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx061_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il contadinello" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx062" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx062_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/062.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La regina delle api" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx063" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx063_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/063.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le tre piume" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx064" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx064_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/064.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'oca d'oro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx065" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx065_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Dognipelo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx066" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx066_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/066.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La sposa del leprotto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx067" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx067_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I dodici cacciatori" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx068" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx068_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il ladro e il suo maestro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx069" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx069_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/069.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Jorinda e Joringhello" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx070" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx070_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre figli della fortuna" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx071" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx071_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I sei che si fanno strada per il mondo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx072" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx072_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il lupo e l'uomo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx073" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx073_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il lupo e la volpe" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx074" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx074_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La volpe e la comare" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx075" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx075_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La volpe e il gatto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx076" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx076_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il garofano" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx077" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx077_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La saggia Ghita" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx078" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx078_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il vecchio nonno e il nipotino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx079" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx079_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'ondina" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx080" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx080_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La morte della gallinella" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx081" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx081_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il Buontempone" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx082" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx082_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/082.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il Giocatutto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx083" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx083_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/083.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La fortuna di Gianni" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx084" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx084_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gianni si sposa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx085" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx085_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I figli d'oro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx086" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx086_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La volpe e le oche" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx087" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx087_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il ricco e il povero" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx088" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx088_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'allodola che canta e saltella" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx089" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx089_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La piccola guardiana di oche" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx090" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx090_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il giovane gigante" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx091" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx091_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Lo gnomo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx092" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx092_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il re del monte d'oro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx093" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx093_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il corvo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx094" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx094_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La figlia furba del contadino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx095" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx095_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il vecchio Ildebrando" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx096" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx096_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre uccelli" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx097" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx097_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'acqua della vita" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx098" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx098_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il dottor Satutto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx099" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx099_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Lo spirito nella bottiglia" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx100" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx100_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il fuligginoso fratello del diavolo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx101" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx101_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La giubba verde del diavolo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx102" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx102_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il re di macchia e l'orso" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx103" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx103_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/103.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La pappa dolce" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx104" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx104_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I fedeli animali" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx105" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx105_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Storie della serpe" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx106" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx106_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il povero garzone e la gattina" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx107" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx107_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le cornacchie" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx108" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx108_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/108.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gian Porcospino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx109" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx109_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La camicina da morto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx110" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx110_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'ebreo nello spineto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx111" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx111_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il cacciatore provetto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx112" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx112_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La trebbia venuta dal cielo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx113" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx113_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il principe e la principessa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx114" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx114_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il saggio piccolo sarto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx115" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx115_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La luce del sole lo rivelerà" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx116" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx116_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La luce azzurra" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx117" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx117_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il bambino capriccioso" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx118" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx118_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre cerusici" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx119" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx119_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I sette svevi" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx120" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx120_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre garzoni" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx121" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx121_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il principe senza paura" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx122" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx122_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'insalata magica" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx123" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx123_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La vecchia nel bosco" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx124" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx124_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre fratelli" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx125" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx125_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/125.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il diavolo e sua nonna" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx126" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx126_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Fernando fedele e Fernando infedele" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx127" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx127_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il forno" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx128" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx128_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La filatrice pigra" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx129" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx129_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I quattro fratelli ingegnosi" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx130" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx130_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Occhietto, Duocchietti, Treocchietti" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx131" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx131_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La bella Caterinella e Pum Pum Fracassino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx132" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx133_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La volpe e il cavallo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx133" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx134_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le scarpe logorate dal ballo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx134" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx135_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I sei servi" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx135" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx136_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La sposa bianca e quella nera" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx136" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx136_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'uomo selvaggio" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx137" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx137_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le tre principesse nere" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx138" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx138_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Knoist e i suoi tre figli" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx139" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx139_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La ragazza di Brakel" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx140" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx140_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Donnette" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx141" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx141_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'agnellino e il pesciolino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx142" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx142_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il monte Simeli" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx143" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx143_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il giramondo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx144" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx144_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'asinello" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx145" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx145_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il figlio ingrato" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx146" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx146_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La rapa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx147" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx147_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il fuoco che ringiovanisce" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx148" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx148_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le bestie del Signore e quelle del diavolo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx149" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx149_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La trave del gallo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx150" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx150_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La vecchia mendicante" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx151" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx151_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre pigri" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx152" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx152_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il pastorello" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx153" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx153_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/153.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La pioggia di stelle" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx154" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx154_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il centesimo rubato" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx155" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx155_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La scelta della sposa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx156" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx156_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gli scarti" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx157" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx157_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il passero e i suoi quattro figli" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx158" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx158_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La favola del paese di Cuccagna" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx159" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx159_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Filastrocca di bugie" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx160" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx160_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Fiaba indovinello" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx161" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx161_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Biancaneve e Rosarossa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx162" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx162_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il servo accorto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx163" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx163_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La bara di vetro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx164" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx164_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il pigro Rico" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx165" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx165_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'uccello grifone" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx166" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx166_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il forte Hans" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx167" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx167_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il contadinello in paradiso" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx168" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx168_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La magra Lisa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx169" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx169_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/169.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La casa nel bosco" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx170" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx170_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Come dividere gioie e dolori" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx171" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx171_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il re di macchia" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx172" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx172_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/172.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La sogliola" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx173" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx173_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il trombotto e l'upupa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx174" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx174_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il gufo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx175" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx175_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La luna" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx176" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx176_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il termine della vita" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx177" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx177_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I messaggeri della morte" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx178" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx178_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Mastro Punteruolo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx179" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx179_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/179.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La guardiana delle oche alla fonte" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx180" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx180_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="figli di Eva, uno diverso dall'altro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx181" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx181_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="L'ondina della pescaia" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx182" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx182_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I doni del popolo piccino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx183" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx183_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il gigante e il sarto" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx184" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx184_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il chiodo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx185" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx185_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il povero ragazzo nella fossa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx186" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx186_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La vera sposa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx187" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx187_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La lepre e il porcospino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx188" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx188_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="il fuso, la spola e l'ago" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx189" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx189_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il contadino e il diavolo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx190" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx190_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le briciole sulla tavola" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx191" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx191_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il leprotto marino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx192" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx192_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il ladro maestro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx193" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx193_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/193.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il tamburino" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx194" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx194_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La spiga" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx195" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx195_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il tumulo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx196" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx196_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il vecchio Rink Rank" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx197" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx197_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La palla di cristallo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx198" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx198_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La vergine Malvina" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx199" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx199_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Gli stivali di bufalo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx200" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx200_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/200.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La chiave d'oro" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx201" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx201_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="San Giuseppe nel bosco" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx202" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx202_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I dodici apostoli" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx203" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx203_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La rosa" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx204" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx204_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Umiltà e povertà portano in cielo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx205" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx205_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il cibo di Dio" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx206" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx206_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="I tre ramoscelli verdi" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx207" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx207_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il bicchierino della Madonna" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx208" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx208_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La vecchierella" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx209" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx209_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Le nozze celesti" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx210" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx210_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="La verga di nocciolo" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="indx211" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="400" Orientation="Horizontal" Background="White" Margin="5,15,0,0" Tap="indx211_Tap">
+                            <Grid Width="150">
+                                <Grid.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="/copertineFiabe/000.jpg"/>
+                                </Grid.Background>
+                            </Grid>
+                            <TextBlock TextWrapping="Wrap" Text="Il gatto con gli stivali" Width="258" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                </ScrollViewer>
+                <!--Elenco a doppia riga con segnaposto per immagine e testo a capo-->
+            </controls:PanoramaItem>
+            <controls:PanoramaItem x:Name="informazioni" Header="informazioni">
+                <ScrollViewer HorizontalAlignment="Left" Height="462" VerticalAlignment="Top" Width="415">
+                    <TextBlock TextWrapping="Wrap" FontSize="24">
+                    	<Run Text="Le storie dei fratelli Grimm hanno spesso una ambientazione oscura e tenebrosa, fatta di fitte foreste popolate da streghe, goblin, troll e lupi."/>
+                    	<LineBreak/>
+                    	<Run/>
+                    	<LineBreak/>
+                    	<Run Text="Oggi, molte delle loro fiabe sono ricordate soprattutto in una forma edulcorata per i bambini e depurata dei particolari più cruenti, che risale alle traduzioni inglesi della settima edizione delle loro raccolte."/>
+                        <LineBreak/>
+                    	<Run/>
+                    	<LineBreak/>
+                        <Run Text="Quest'app contiene l'intera raccolta delle emozionanti fiabe scritte dai fratelli Grimm. Questi fiabe sono considerate oggi come le più profonde e significative della storia della letteratura mondiale, con il dublice scopo di dilettare ed educare il lettore; per questo non esiste un'età consigliata per la lettura, ma chiunque, bambino o adulto che sia può trarne divertimento ed un profondo significato da queste fiabe. Personalmente consiglio quest'app sopratutto per leggere una bella fiaba ai bambini prima di andare a dormire invece che far guardare programmi televisivi spesso violenti e diseducativi che vengono proposti ogni giorno dai media."/>
+                        <LineBreak/>
+                    	<Run/>
+                    	<LineBreak/>
+                        <Run Text="Buona lettura!"/>
+                    </TextBlock>
+                </ScrollViewer>
+                <!--Elenco a doppia riga con segnaposto per immagine e testo a capo-->
+            </controls:PanoramaItem>
+        </controls:Panorama>
+    </Grid>
+</phone:PhoneApplicationPage>

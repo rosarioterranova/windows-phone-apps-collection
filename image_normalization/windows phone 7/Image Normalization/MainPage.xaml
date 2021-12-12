@@ -1,0 +1,108 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Image_Normalization.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Controllo Pivot-->
+        <controls:Pivot Title="Image Normalization" Margin="10,0,-10,0">
+            <!--Elemento Pivot uno-->
+            <controls:PivotItem x:Name="Normalizzazione" Header="norm.">
+                <ScrollViewer HorizontalAlignment="Left" Height="597" VerticalAlignment="Top" Width="456">
+                    <TextBlock TextWrapping="Wrap" FontSize="24">
+                    	<Run Text="Operando aritmeticamente sulla matrice di un'immagine applicando vari filtri, può accadere che un pixel abbia:"/>
+                    	<LineBreak/>
+                    	<Run Text="a) Un valore negativo;"/>
+                    	<LineBreak/>
+                    	<Run Text="b) Un valore maggiore del massimo (tipicamente 255);"/>
+                    	<LineBreak/>
+                    	<Run Text="c) Un valore non intero (facilmente risolubile con una approssimazione o un troncamento);"/>
+                    	<LineBreak/>
+                    	<Run/>
+                    	<LineBreak/>
+                    	<Run Text="I problemi a) e b) si chiamano problemi di range. Le soluzioni più comuni sono:"/>
+                    	<LineBreak/>
+                    	<Run Text="- Settare a 0 (colore nero) i valori negativi e a 255 (colore bianco) i valori maggiori di 255. - Rinormalizzare il range trasformando ciascun valore della matrice secondo l'equazione chiamata Normalizzazione"/>
+                    	<LineBreak/>
+                    	<Run/>
+                    	<LineBreak/>
+                    	<Run Text="Ovviamente, se solo un numero della matrice è fuori dal range [0..255], bisognerà normalizzare tutti i valori della matrice per non creare disparità e uniformare la normalizzazione."/>
+                    </TextBlock>
+                </ScrollViewer>
+                <!--Elenco a doppia riga con testo a capo-->
+            </controls:PivotItem>
+
+            <!--Elemento Pivot due-->
+            <controls:PivotItem x:Name="Calcolo" Header="calcolo">
+                <ScrollViewer HorizontalAlignment="Left" Height="615" VerticalAlignment="Top" Width="456" Margin="0,-18,0,0">
+                    <Grid Height="559" Width="446">
+                        <Image HorizontalAlignment="Left" Height="70" Margin="0,28,-2,0" VerticalAlignment="Top" Width="448" Source="/formula.png"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="10,-10,0,0" TextWrapping="Wrap" Text="Formula:" VerticalAlignment="Top" FontSize="24"/>
+                        <TextBox x:Name="val" HorizontalAlignment="Left" Height="72" Margin="266,123,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" InputScope="Number"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="2,139,0,0" TextWrapping="Wrap" Text="Valore da normalizzare:" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.258,0.465"/>
+                        <TextBox x:Name="min" HorizontalAlignment="Left" Height="72" Margin="266,220,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" InputScope="Number"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="1,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.258,0.465" Text="Valore min della matrice:"/>
+                        <TextBox x:Name="max" HorizontalAlignment="Left" Height="72" Margin="266,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" InputScope="Number"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="1,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.258,0.465">
+                        	<Run Text="Valore max della matrice:"/>
+                        </TextBlock>
+                        <TextBox x:Name="risultato" HorizontalAlignment="Left" Height="72" Margin="266,466,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" InputScope="Number" IsReadOnly="True"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="1,485,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.258,0.465" Text="Valore normalizzato:"/>
+                        <Button x:Name="normalizzaButton" Content="Normalizza" HorizontalAlignment="Left" Margin="17,385,0,0" VerticalAlignment="Top" Width="200" Click="normalizzaButton_Click"/>
+                        <Button x:Name="resetButton" Content="Reset" HorizontalAlignment="Left" Margin="212,385,0,0" VerticalAlignment="Top" Width="200" Click="resetButton_Click"/>
+                    </Grid>
+                </ScrollViewer>
+                <!--Elenco a tripla riga senza testo a capo-->
+            </controls:PivotItem>
+            <controls:PivotItem x:Name="Info" Header="info">
+                <ScrollViewer HorizontalAlignment="Left" Height="597" VerticalAlignment="Top" Width="446">
+                    <StackPanel HorizontalAlignment="Left" Height="615" VerticalAlignment="Top" Width="456">
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24">
+                    		<Run Text="versione 1.0"/>
+                    		<LineBreak/>
+                    		<Run/>
+                        </TextBlock>
+                        <Image HorizontalAlignment="Center" Height="200" VerticalAlignment="Top" Width="200" Source="/icona.png"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" FontSize="24">
+                        	<Run/>
+                        	<LineBreak/>
+                        	<Run Text="Image normalization permette di normalizzare i valori di una matrice secondo l'equazione di normalizzazione tipica della teoria dell'elaborazione delle immagini."/>
+                        </TextBlock>
+                        <TextBlock x:Name="siteweb" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="446" Tap="siteweb_Tap">
+                        	<Run/>
+                        	<LineBreak/>
+                        	<Run Text="Per scoprire altre mie app visita il sito:"/>
+                        	<LineBreak/>
+                        	<Run FontWeight="Bold" Text="http://rosarioterranova.altervista.org/">
+                        		<Run.Foreground>
+                        			<SolidColorBrush Color="#FFFF0202">
+                        				<SolidColorBrush.RelativeTransform>
+                        					<MatrixTransform Matrix="Identity"/>
+                        				</SolidColorBrush.RelativeTransform>
+                        				<SolidColorBrush.Transform>
+                        					<MatrixTransform Matrix="Identity"/>
+                        				</SolidColorBrush.Transform>
+                        			</SolidColorBrush>
+                        		</Run.Foreground>
+                        	</Run>
+                        </TextBlock>
+                    </StackPanel>
+                </ScrollViewer>
+                <!--Elenco a tripla riga senza testo a capo-->
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+</phone:PhoneApplicationPage>

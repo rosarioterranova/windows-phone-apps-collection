@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <!--
+    QUESTO FILE MANIFESTO DI PACCHETTO È GENERATO DAL PROCESSO DI COMPILAZIONE.
+
+    Le modifiche apportate a questo file vengono perse quando il file viene rigenerato. Per correggere gli errori in questo file, modificare il file di origine appxmanifest.
+
+    Per ulteriori informazioni sui file manifesto di pacchetto, vedere http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="a32e9a38-7da0-40db-8a03-df0175376e50" Publisher="CN=Rosario" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Properties>
+    <DisplayName>Image Normalization for Windows 8</DisplayName>
+    <PublisherDisplayName>Rosario</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="IT-IT" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="Image Normalization for Windows 8.exe" EntryPoint="Image_Normalization_for_Windows_8.App">
+      <VisualElements DisplayName="Image Normalization for Windows 8" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Image Normalization for Windows 8" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5" />
+    <build:Item Name="VisualStudio" Version="11.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2012" />
+    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="11.0.60610.1" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="11.0.60315.1" />
+    <build:Item Name="MakePri.exe" Version="6.2.9200.20789 (win8_ldr.130802-1617)" />
+  </build:Metadata>
+</Package>

@@ -1,0 +1,27 @@
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\Image Normalization for Windows 8.exe
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\Image Normalization for Windows 8.pdb
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\resources.pri
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\AppxManifest.xml
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\Image Normalization for Windows 8.build.appxrecipe
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\App.g.i.cs
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\App.g.cs
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\Common\StandardStyles.g.i.cs
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\Common\StandardStyles.g.cs
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\MainPage.g.i.cs
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\MainPage.g.cs
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\XamlTypeInfo.g.cs
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\App.xaml
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\Common\StandardStyles.xaml
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\MainPage.xaml
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\Image Normalization for Windows 8.exe
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\Image Normalization for Windows 8.pdb
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\priconfig.xml
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\layout.resfiles
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\resources.resfiles
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\pri.resfiles
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\LanguageQualifiers.txt
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\ProjectArchitectures.txt
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\priconfig.xml.intermediate
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\layout.resfiles.intermediate
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\resources.resfiles.intermediate
+c:\users\rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\obj\Debug\pri.resfiles.intermediate

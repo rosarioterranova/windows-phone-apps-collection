@@ -1,0 +1,157 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
+    x:Class="Ammissione_Medicina.Date"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" shell:SystemTray.BackgroundColor="DarkGreen">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/img/greenTex.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contiene il nome dell'applicazione e il titolo della pagina-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,10">
+            <TextBlock Text="DATE PROVE" Style="{StaticResource PhoneTextNormalStyle}" FontSize="20" Margin="100,10,12,0" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        </StackPanel>
+        <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Height="681" Margin="25,10,0,0" Grid.Row="1" Width="455">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" telerik:InteractionEffectManager.IsInteractionEnabled="True">
+                <StackPanel x:Name="medicina" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="420" Orientation="Horizontal" Background="White" Margin="0,10,0,0">
+                    <Grid HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="150">
+                        <Grid.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/img/medicina.png"/>
+                        </Grid.Background>
+                    </Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="Black" Margin="10,0,0,0">
+                    	<Run Text="Veterinaria"/>
+                    	<LineBreak/>
+                    	<Run FontSize="24" Text="9 Aprile 2014"/>
+                    </TextBlock>
+                </StackPanel>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top">
+                	<Run/>
+                	<LineBreak/>
+                	<Run FontWeight="Bold" Text="IL TEST"/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="Sono sempre 60 domande, preparate dalla Cambridge Assessment, di cui: "/>
+                	<LineBreak/>
+                	<Run Text="-4 di cultura generale;"/>
+                	<LineBreak/>
+                	<Run Text="-23 di ragionamento logico;"/>
+                	<LineBreak/>
+                	<Run Text="-13 di biologia;"/>
+                	<LineBreak/>
+                	<Run Text="-14 di chimica;"/>
+                	<LineBreak/>
+                	<Run Text="-6 di fisica e matematica."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="La prova di ammissione ha inizio alle ore 11.00 in tutte le sedi e per il suo svolgimento è assegnato un tempo di 100 minuti."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="Il punteggio viene attribuito in questo modo:"/>
+                	<LineBreak/>
+                	<Run Text="+1,5 punti per ogni risposta esatta;"/>
+                	<LineBreak/>
+                	<Run Text="- 0,4 punti per ogni risposta sbagliata;"/>
+                	<LineBreak/>
+                	<Run Text="0 punti per ogni risposta non data."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run FontWeight="Bold" Text="LA GRADUATORIA"/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="Per essere ammessi è necessario ragigungere un punteggio di almeno 20 punti su un totale di 90 punti totali. Prevale in ordine decrescente il punteggio ottenuto dal candidato in chimica, ragionamento logico, cultura generale, biologia, fisica e matematica. "/>
+                	<LineBreak/>
+                	<Run Text="I posti eventualmente non utilizzati nella graduatoria dei cittadini extracomunitari verranno utilizzati per lo scorrimento della graduatoria dei cittadini comunitari solo se previsto nei bandi di ciascun ateneo."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="La graduatoria è NAZIONALE: le preferenze (nel decreto non si specifica un numero massimo, quindi non dovrebbe esserci) vanno espresse al momento dell'iscrizione al test entro l'11 marzo. Il candidato è in ogni caso obbligato a sostenere il test nella sede indicata come prima scelta."/>
+                	<LineBreak/>
+                	<Run Text="Salvo eccezioni, la graduatoria si chiuderà il 1 ottobre 2014."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="I bandi di concorso, che definiscono le modalità di pagamento della tassa per sostenere il test, la sede della prova e quant'altro, sono emanati dalle università entro il 7 febbraio 2014. Appena disponibili sul sito delle università li pubblicheremo in un'apposita nota."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run FontWeight="Bold" Text="LE DATE IMPORTANTI"/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="Dal 12 febbraio all'11 marzo ci si iscrive al test SOLO ONLINE sul sito www.universitaly.it: è necessario creare un account con i propri dati prima dell'iscrizione al test, chi lo avesse già può iniziare subito la procedura facendo il login."/>
+                	<LineBreak/>
+                	<Run Text="Il pagamento, che avviene secondo le modalità previste dall'Ateneo in cui si sostiene la prova, deve essere effettuato entro il 18 marzo. Chi non paga il contributo di ammissione entro i termini di legge non può sostenere il test."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="Il 23 aprile verranno pubblicati i risultati del test in ordine decrescente: la graduatoria sarà anonima. Da quel giorno, i candidati possono prendere visione del proprio compito accedendo al sito http://accessoprogrammato.miur.it con le chiavi d'accesso ricevute al momento della prova."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="Il 12 maggio è pubblicata la graduatoria definitiva: i candidati ASSEGNATI devono provvedere all'immatricolazione, mentre i candidati PRENOTATI possono immatricolarsi secondo le procedure di ciascun ateneo."/>
+                	<LineBreak/>
+                	<Run Text="Sia gli assegnati, sia i prenotati hanno un termine massimo di 4 giorni per immatricolarsi, incluso il giorno dello scorrimento della graduatoria ed esclusi il sabato ed i festivi. Tuttavia, se la mancata immatricolazione dei candidati assegnati comporta la rinuncia se non esercitata nel termine di 4 giorni, i prenotati che non esercitano tale possibilità NON decadono dalla graduatoria. Non cambia nulla rispetto a quest'anno: continueranno ad esserci persone che terranno occupati dei posti per mesi, impedendo ad altri di immatricolarsi."/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run Text="Alla data del 1 ottobre tutti i candidati in posizione utile in graduatoria con lo status di assegnato o prenotato e non ancora immatricolati sono tenuti ad immatricolarsi entro il 6 ottobre. In caso di mancato rispetto dei termini, i candidati non possono più immatricolarsi in alcun caso. "/>
+                	<LineBreak/>
+                	<Run Text=" "/>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+        <Image HorizontalAlignment="Left" Height="76" Margin="25,-4,0,0" VerticalAlignment="Top" Width="76" Source="/vet.png"/>
+
+        <!--ContentPanel - inserire ulteriore contenuto qui-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

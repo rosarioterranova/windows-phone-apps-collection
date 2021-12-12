@@ -1,0 +1,15 @@
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\ApplicationIcon.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\Background.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\Image Normalization.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\Image Normalization.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\AppManifest.xaml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\obj\Release\App.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\obj\Release\MainPage.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\obj\Release\Image Normalization.g.resources
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\obj\Release\Image Normalization.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\obj\Release\Image Normalization.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization\Image Normalization\obj\Release\XapCacheFile.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Image Normalization\Image Normalization\obj\Release\Image Normalization.csprojResolveAssemblyReference.cache
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Image Normalization\Image Normalization\Bin\Release\Image Normalization_Release_AnyCPU.xap

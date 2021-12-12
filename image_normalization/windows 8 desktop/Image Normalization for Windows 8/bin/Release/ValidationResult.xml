@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="3.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="Rosario Terranova" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" VALIDATION_TYPE="UI" ReportGenerationTime="06/12/2013 15:45:20" ID="6873b9cb6f505c7922c8f850d76052c1">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Installazione pulita e reversibile - Test" RATIONALE="Un'installazione pulita e reversibile consente agli utenti di gestire correttamente (distribuire e rimuovere) le applicazioni sul loro sistema." />
+    <REQUIREMENT NUMBER="2" TITLE="Installa nelle cartelle corrette - Test" RATIONALE="Windows fornisce specifiche cartelle nel file system in cui archiviare programmi e componenti software, nonché dati sulle applicazioni condivisi e specifici di un utente." />
+    <REQUIREMENT NUMBER="3" TITLE="File con firma digitale - Test" RATIONALE="Una firma digitale Authenticode consente agli utenti di verificare che il software sia originale. Consente inoltre di rilevare se un file è stato alterato (ad esempio, infettato da un virus)." />
+    <REQUIREMENT NUMBER="4" TITLE="Supporta Windows x64 - Test" RATIONALE="Per mantenere la compatibilità con le versioni a 64 bit di Windows, è necessario che le applicazioni supportino a livello nativo le applicazioni Windows a 64 bit o almeno a 32 bit." />
+    <REQUIREMENT NUMBER="5" TITLE="Controllo della versione del sistema operativo - Test" RATIONALE="Le applicazioni non devono eseguire il controllo della versione sulla base dell'uguaglianza (== 5.1). Se si ha bisogno di una specifica funzionalità, verificare che tale funzionalità sia disponibile. Se si ha bisogno di Windows XP, effettuare la verifica per Windows XP o versioni successive (&gt;= 5.1). In questo modo, il codice di rilevamento continuerà a funzionare sulle versioni future di Windows. I programmi di installazione dei driver e i moduli di disinstallazione non devono controllare la versione del sistema operativo." />
+    <REQUIREMENT NUMBER="6" TITLE="Controllo account utente - Test" RATIONALE="Per eseguire la maggior parte delle applicazioni non è necessario disporre dei privilegi di amministratore, ma è sufficiente accedere come utente standard. Le applicazioni Windows devono avere un manifesto (incorporato o esterno) che ne definisca il livello di esecuzione e indichi così al sistema operativo i privilegi necessari per la loro esecuzione." />
+    <REQUIREMENT NUMBER="7" TITLE="Conformità ai messaggi di Gestione riavvio sistema" RATIONALE="Se si verifica un arresto critico, le applicazioni che restituiscono FALSE per WM_QUERYENDSESSION riceveranno il comando WM_ENDSESSION e verranno chiuse, mentre quelle che sono andate in timeout in risposta a WM_QUERYENDSESSION verranno terminate." />
+    <REQUIREMENT NUMBER="8" TITLE="Modalità sicura - Test" RATIONALE="Per impostazione predefinita, la maggior parte dei driver e dei servizi che non sono forniti preinstallati in Windows non viene avviata in modalità sicura. Lasciarli disabilitati a meno che non siano necessari per eseguire operazioni di base del sistema o per attività di diagnostica e ripristino." />
+    <REQUIREMENT NUMBER="9" TITLE="Sessioni multiutente - Test" RATIONALE="Gli utenti di Windows dovrebbero essere in grado di eseguire sessioni simultanee senza conflitti o interruzioni. È necessario che sia garantito il corretto funzionamento delle applicazioni quando vengono eseguite in sessioni multiple in locale o remoto. Le impostazioni delle applicazioni e i file di dati non devono essere condivisi tra diversi utenti. La privacy e le preferenze di un utente devono restare isolate all'interno della sessione dell'utente." />
+    <REQUIREMENT NUMBER="10" TITLE="Arresti anomali e blocchi - Test" RATIONALE="Errori quali interruzioni o arresti anomali di un'applicazione rappresentano una notevole fonte di frustrazione per gli utenti. L'eliminazione di questi errori migliora la stabilità e l'affidabilità dell'applicazione e garantisce agli utenti una maggiore soddisfazione.">
+      <TEST INDEX="21" NAME="Arresti anomali e blocchi" DESCRIPTION="Non arrestare o bloccare il sistema in modo anomalo durante il test." EXECUTIONTIME="00h:00m:10s.41ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Compatibilità e resilienza - Test" RATIONALE="Quando Windows rileva il comportamento incompatibile di un'applicazione, applica una correzione rapida per la compatibilità che fa sì che l'applicazione si comporti correttamente, ottimizzandone l'uso da parte degli utenti. Le applicazioni non devono affidarsi a questa soluzione perché viene fornita esclusivamente per consentire il corretto funzionamento delle applicazioni legacy in Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Conformità del manifesto dell'app - Test" RATIONALE="Nel manifesto del pacchetto mancano uno o più attributi necessari.">
+      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:06s.15ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Procedure consigliate per la sicurezza di Windows - Test" RATIONALE="Le applicazioni non devono modificare le impostazioni di sicurezza predefinite di Windows." />
+    <REQUIREMENT NUMBER="14" TITLE="Funzionalità di sicurezza di Windows - Test" RATIONALE="Le applicazioni devono acconsentire esplicitamente alle funzionalità di sicurezza di Windows.">
+      <TEST INDEX="33" NAME="Analizzatore binario" DESCRIPTION="Analisi delle funzionalità di sicurezza abilitate sui file binari" EXECUTIONTIME="00h:00m:02s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:02s.84ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:05s.49ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="API Supportate - Test" RATIONALE="L'applicazione deve fare riferimento esclusivamente alle API consentite da Windows SDK per le app di Windows Store.">
+      <TEST INDEX="38" NAME="API supportate" DESCRIPTION="L'app di Windows Store deve utilizzare esclusivamente le API della piattaforma supportata." EXECUTIONTIME="00h:00m:05s.53ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Prestazioni - Test" RATIONALE="L'applicazione deve avviarsi ed entrare in sospensione velocemente utilizzando una quantità ragionevole di risorse di sistema (CPU, I/O file, memoria, ecc.) per supportare un passaggio rapido e il multitasking tra le applicazioni aperte in precedenza.">
+      <TEST INDEX="50" NAME="Creazione bytecode" DESCRIPTION="La creazione bytecode dovrebbe riuscire senza problemi nel caso di pacchetti contenenti un'app di Windows Store HTML5." EXECUTIONTIME="00h:00m:05s.11ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="60" NAME="Riferimenti binding ottimizzati" DESCRIPTION="Quando si utilizzano i binding, WinJS.Binding.optimizeBindingReferences deve essere impostato su true per ottimizzare l'utilizzo della memoria." EXECUTIONTIME="00h:00m:07s.65ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="43" NAME="Prestazioni avvio" DESCRIPTION="L'applicazione deve avviarsi velocemente con un utilizzo ragionevole di CPU, I/O file e memoria" EXECUTIONTIME="00h:03m:52s.08ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="44" NAME="Prestazioni sospensione" DESCRIPTION="L'applicazione deve entrare in modalità di sospensione velocemente con un utilizzo ragionevole di CPU e I/O file" EXECUTIONTIME="00h:02m:44s.16ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="Risorse del manifesto dell'app - Test" RATIONALE="È necessario definire risorse valide nel file resources.pri per il manifesto di pacchetto app , così come per le specifiche di pacchetto app e lo schema manifesto app.">
+      <TEST INDEX="45" NAME="Convalida risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:00s.85ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Convalida personalizzazioni" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:09s.14ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Configurazione debug - Test" RATIONALE="L'app non deve installare alcun file binario di debug.">
+      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:05s.10ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="Test codifica file" RATIONALE="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente.">
+      <TEST INDEX="49" NAME="Codifica file UTF-8" DESCRIPTION="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente." EXECUTIONTIME="00h:00m:04s.11ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Test funzionalità Direct3D" RATIONALE="L'app deve utilizzare la funzionalità Direct3D in modo corretto.">
+      <TEST INDEX="51" NAME="Supporto a livello di funzionalità Direct3D" DESCRIPTION="Le applicazioni devono eseguire il rendering del contenuto sull'hardware per la funzionalità Direct3D di livello 9.1." EXECUTIONTIME="00h:00m:17s.35ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="71" NAME="Trim su Direct3D dopo sospensione" DESCRIPTION="Le applicazioni devono eseguire la chiamata a IDXGIDevice3::Trim() sui dispositivi Direct3D creati durante la gestione di una notifica di sospensione." EXECUTIONTIME="00h:00m:03s.31ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="Test delle funzionalità dell'app" RATIONALE="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento.">
+      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:02s.85ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Convalida dei metadati per Windows Runtime" RATIONALE="I metadati devono essere conformi e coerenti indipendentemente dalla loro origine.">
+      <TEST INDEX="56" NAME="Test dell'attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:03s.77ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Test del percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:01s.57ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Test di distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:01s.47ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Test di correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:02s.42ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="Test di correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:03s.77ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Test delle proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.77ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Test integrità pacchetto" RATIONALE="Convalida dei contenuti del pacchetto dell'app per accertarne la correttezza.">
+      <TEST INDEX="63" NAME="File appropriati per la piattaforma" DESCRIPTION="L'app non deve installare file non corrispondenti all'architettura del processore di destinazione." EXECUTIONTIME="00h:00m:08s.69ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="66" NAME="Verifica struttura di directory supportata" DESCRIPTION="Verificare che la lunghezza del nome di ciascun file nel pacchetto non superi il valore MAX_PATH." EXECUTIONTIME="00h:00m:02s.61ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="Supporto DPI elevato" RATIONALE="L'applicazione deve impostare il rilevamento della risoluzione in DPI in modo che l'interfaccia utente risulti coerente su un'ampia gamma di schermi con DPI elevato." />
+    <REQUIREMENT NUMBER="27" TITLE="Test utilizzo risorse" RATIONALE="Le attività in background WinJS devono chiamare close() per liberare le risorse.">
+      <TEST INDEX="68" NAME="Test attività in background WinJS" DESCRIPTION="Le attività in background WinJS devono chiamare close() per liberare risorse." EXECUTIONTIME="00h:00m:06s.69ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="63560RosarioTerranova.ImageNormalization" Type="Application" Source="AppxPackage" Publisher="CN=A48DCFCA-1AF9-4D3B-8121-960E327B5D96" Version="1.0.0.0" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\63560RosarioTerranova.ImageNormalization_1.0.0.0_neutral__jb4fsx3mz8x6t" PathEvidenceId="0xa" RNP="0x1" DNP="0xd" EvidenceId="0xa" Id="00008c70c0a9455628675d08f3006d06925600000904">
+        <Indicators>
+          <DirectoryIndicators>
+            <Directory Name="63560rosarioterranova.imagenormalization_1.0.0.0_neutral__jb4fsx3mz8x6t" Path="c:\program files\windowsapps\63560rosarioterranova.imagenormalization_1.0.0.0_neutral__jb4fsx3mz8x6t" RNP="0x9" DNP="0xb" UniqueId="0xb" Id="0000462ec52749139fbfa772f913985de28d1e262630" />
+          </DirectoryIndicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="63560rosarioterranova.imagenormalization_1.0.0.0_neutral__jb4fsx3mz8x6t">
+              <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build">
+                <Identity Name="63560RosarioTerranova.ImageNormalization" Publisher="CN=A48DCFCA-1AF9-4D3B-8121-960E327B5D96" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+                <Properties>
+                  <DisplayName>Image Normalization</DisplayName>
+                  <PublisherDisplayName>Rosario Terranova</PublisherDisplayName>
+                  <Logo>Assets\StoreLogo.png</Logo>
+                </Properties>
+                <Prerequisites>
+                  <OSMinVersion>6.2.1</OSMinVersion>
+                  <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+                </Prerequisites>
+                <Resources>
+                  <Resource Language="IT-IT" />
+                </Resources>
+                <Applications>
+                  <Application Id="App" Executable="Image Normalization for Windows 8.exe" EntryPoint="Image_Normalization_for_Windows_8.App">
+                    <VisualElements DisplayName="Image Normalization" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Image Normalization for Windows 8" ForegroundText="light" BackgroundColor="#464646" ToastCapable="false">
+                      <DefaultTile ShowName="allLogos" ShortName="Image Normalization" />
+                      <SplashScreen Image="Assets\SplashScreen.png" />
+                      <InitialRotationPreference>
+                        <Rotation Preference="landscape" />
+                      </InitialRotationPreference>
+                    </VisualElements>
+                  </Application>
+                </Applications>
+              </Package>
+            </PackageManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000841fa4b2ffb972c002e0815a07d7ab383e5b5737">
+            <File Name="resources.pri" Id="0000f9b2d8bdc4ae3de0793e28c7f06cb10c2d50a40e" ShortName="RESOUR~1.PRI" Size="0xa18" BinaryType="UNKNOWN" Created="12/06/2013 14:37:34" Modified="12/06/2013 14:37:34" Path="c:\program files\windowsapps\63560rosarioterranova.imagenormalization_1.0.0.0_neutral__jb4fsx3mz8x6t" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\63560rosarioterranova.imagenormalization_1.0.0.0_neutral__jb4fsx3mz8x6t\resources.pri" LongPathHash="00006cdcc179159a35368080a374f5f9f7b38ac72ac8" UniqueId="0xd" />
+            <File Name="Image Normalization for Windows 8.exe" Id="0000fecaa099684c4b4ca40b6505b76ab555a2b595e9" ProductName="Image Normalization for Windows 8" ProductVersion="1.0.0.0" VerLanguage="0" ShortName="IMAGEN~1.EXE" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x4200" SizeOfImage="0xa000" PeHeaderHash="010108864d29f6f14cd4061521381047966d85ad8dcc" PeChecksum="0x0" PeImageType="0x14c" PeSubsystem="2" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="Image Normalization for Windows 8" InternalName="Image Normalization for Windows 8.exe" LegalCopyright="Copyright ©  2013" LinkerVersion="11.0" LinkDate="12/06/2013 14:36:59" BinaryType="DOTNETIL" Created="12/06/2013 14:37:34" Modified="12/06/2013 14:37:34" OriginalFilename="Image Normalization for Windows 8.exe" RunLevel="AsInvoker" UiAccess="false" Path="c:\program files\windowsapps\63560rosarioterranova.imagenormalization_1.0.0.0_neutral__jb4fsx3mz8x6t" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\63560rosarioterranova.imagenormalization_1.0.0.0_neutral__jb4fsx3mz8x6t\image normalization for windows 8.exe" LongPathHash="00006f056966c88b8e8fd73711c5539dbe8d5831d311" UniqueId="0xc" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="00008c70c0a9455628675d08f3006d06925600000904" AnalysisVersion="1.60" DictionaryVersion="2.14" Type="Package" Id="63560RosarioTerranova.ImageNormalization_1.0.0.0_neutral__jb4fsx3mz8x6t">
+      <AitFile ErrorCode="0" Name="Image Normalization for Windows 8.exe" Id="0000fecaa099684c4b4ca40b6505b76ab555a2b595e9">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorExeMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Action`1" />
+          <AitFeature Name="System.ArgumentException" />
+          <AitFeature Name="System.ArgumentException..ctor" />
+          <AitFeature Name="System.AsyncCallback" />
+          <AitFeature Name="System.Char" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
+          <AitFeature Name="System.Collections.Generic.Dictionary`2" />
+          <AitFeature Name="System.Convert" />
+          <AitFeature Name="System.Convert.ToInt32" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
+          <AitFeature Name="System.Double" />
+          <AitFeature Name="System.Double.Parse" />
+          <AitFeature Name="System.Double.ToString" />
+          <AitFeature Name="System.Exception" />
+          <AitFeature Name="System.Exception..ctor" />
+          <AitFeature Name="System.FormatException" />
+          <AitFeature Name="System.Func`2" />
+          <AitFeature Name="System.IAsyncResult" />
+          <AitFeature Name="System.IDisposable" />
+          <AitFeature Name="System.IDisposable.Dispose" />
+          <AitFeature Name="System.Int32" />
+          <AitFeature Name="System.InvalidOperationException" />
+          <AitFeature Name="System.InvalidOperationException..ctor" />
+          <AitFeature Name="System.MulticastDelegate" />
+          <AitFeature Name="System.NotImplementedException" />
+          <AitFeature Name="System.NotImplementedException..ctor" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCultureAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCultureAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyVersionAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeHelpers" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken" />
+          <AitFeature Name="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal" />
+          <AitFeature Name="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.RuntimeTypeHandle" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.String.Compare" />
+          <AitFeature Name="System.String.Concat" />
+          <AitFeature Name="System.String.IsNullOrEmpty" />
+          <AitFeature Name="System.String.Split" />
+          <AitFeature Name="System.String.Trim" />
+          <AitFeature Name="System.String.op_Equality" />
+          <AitFeature Name="System.String.op_Inequality" />
+          <AitFeature Name="System.StringComparison" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.Type.GetTypeFromHandle" />
+          <AitFeature Name="System.Type.get_FullName" />
+          <AitFeature Name="System.Type.get_TypeHandle" />
+          <AitFeature Name="System.Uri" />
+          <AitFeature Name="System.Uri..ctor" />
+        </AitCategory>
+        <AitCategory Id="DotNetWinRt">
+          <AitFeature Name="Windows.ApplicationModel.Activation.ApplicationExecutionState" />
+          <AitFeature Name="Windows.ApplicationModel.Activation.LaunchActivatedEventArgs" />
+          <AitFeature Name="Windows.ApplicationModel.Activation.LaunchActivatedEventArgs.get_Arguments" />
+          <AitFeature Name="Windows.ApplicationModel.Activation.LaunchActivatedEventArgs.get_PreviousExecutionState" />
+          <AitFeature Name="Windows.ApplicationModel.SuspendingDeferral" />
+          <AitFeature Name="Windows.ApplicationModel.SuspendingDeferral.Complete" />
+          <AitFeature Name="Windows.ApplicationModel.SuspendingEventArgs" />
+          <AitFeature Name="Windows.ApplicationModel.SuspendingEventArgs.get_SuspendingOperation" />
+          <AitFeature Name="Windows.ApplicationModel.SuspendingOperation" />
+          <AitFeature Name="Windows.ApplicationModel.SuspendingOperation.GetDeferral" />
+          <AitFeature Name="Windows.UI.Xaml.Application" />
+          <AitFeature Name="Windows.UI.Xaml.Application..ctor" />
+          <AitFeature Name="Windows.UI.Xaml.Application.LoadComponent" />
+          <AitFeature Name="Windows.UI.Xaml.Application.Start" />
+          <AitFeature Name="Windows.UI.Xaml.Application.add_Suspending" />
+          <AitFeature Name="Windows.UI.Xaml.Application.remove_Suspending" />
+          <AitFeature Name="Windows.UI.Xaml.ApplicationInitializationCallback" />
+          <AitFeature Name="Windows.UI.Xaml.ApplicationInitializationCallback..ctor" />
+          <AitFeature Name="Windows.UI.Xaml.ApplicationInitializationCallbackParams" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Button" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.ContentControl" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.ContentControl.get_Content" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame..ctor" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame.Navigate" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Page" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Page..ctor" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.ButtonBase" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.ButtonBase.add_Click" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.ButtonBase.remove_Click" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.TextBox" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.TextBox.get_Text" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.TextBox.put_Text" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.UserControl" />
+          <AitFeature Name="Windows.UI.Xaml.FrameworkElement" />
+          <AitFeature Name="Windows.UI.Xaml.FrameworkElement.FindName" />
+          <AitFeature Name="Windows.UI.Xaml.Markup.IComponentConnector" />
+          <AitFeature Name="Windows.UI.Xaml.Markup.IXamlMember" />
+          <AitFeature Name="Windows.UI.Xaml.Markup.IXamlMetadataProvider" />
+          <AitFeature Name="Windows.UI.Xaml.Markup.IXamlType" />
+          <AitFeature Name="Windows.UI.Xaml.Markup.XmlnsDefinition" />
+          <AitFeature Name="Windows.UI.Xaml.Navigation.NavigationEventArgs" />
+          <AitFeature Name="Windows.UI.Xaml.RoutedEventArgs" />
+          <AitFeature Name="Windows.UI.Xaml.RoutedEventHandler" />
+          <AitFeature Name="Windows.UI.Xaml.RoutedEventHandler..ctor" />
+          <AitFeature Name="Windows.UI.Xaml.SuspendingEventHandler" />
+          <AitFeature Name="Windows.UI.Xaml.SuspendingEventHandler..ctor" />
+          <AitFeature Name="Windows.UI.Xaml.UIElement" />
+          <AitFeature Name="Windows.UI.Xaml.Window" />
+          <AitFeature Name="Windows.UI.Xaml.Window.Activate" />
+          <AitFeature Name="Windows.UI.Xaml.Window.get_Content" />
+          <AitFeature Name="Windows.UI.Xaml.Window.get_Current" />
+          <AitFeature Name="Windows.UI.Xaml.Window.put_Content" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

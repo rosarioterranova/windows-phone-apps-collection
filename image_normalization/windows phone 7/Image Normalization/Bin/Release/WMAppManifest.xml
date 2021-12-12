@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{9b4052d2-a78e-49e5-b6d9-0d3b13e81dd7}" Title="Image Normalization" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Rosario Terranova" Description="" Publisher="Rosario Terranova" BitsPerPixel="32">
+    <IconPath IsRelative="true" IsResource="false">iconab.png</IconPath>
+    <Capabilities>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="Image_NormalizationToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">iconac.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>Image Normalization</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
+<!-- WPSDK Version 7.1.8773.0 -->

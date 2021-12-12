@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PC-ROSARIO</Machine>
+    <WindowsUser>Rosario</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>F1688CB6DAD184C8B3C3448C364AC6390301654F43FCF71A7384F0CE1C589DC8</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a32e9a38-7da0-40db-8a03-df0175376e50_1.0.0.0_neutral__mhq6ww4f9ntwt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a32e9a38-7da0-40db-8a03-df0175376e50_mhq6ww4f9ntwt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a32e9a38-7da0-40db-8a03-df0175376e50</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Rosario</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-12-06T14:09:32.917</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\Image Normalization for Windows 8.exe">
+      <PackagePath>Image Normalization for Windows 8.exe</PackagePath>
+      <Modified>2013-12-06T14:16:49.058</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\Image Normalization for Windows 8.pdb">
+      <PackagePath>Image Normalization for Windows 8.pdb</PackagePath>
+      <Modified>2013-12-06T14:16:49.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-12-06T14:12:32.445</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-12-06T14:12:54.695</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-12-06T14:14:40.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-12-06T14:13:41.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\formula.png">
+      <PackagePath>formula.png</PackagePath>
+      <Modified>2013-12-05T12:21:16.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\black-leather-texture-adownload-texture--black-leather-background-download-photo-black-npgajgga.jpg">
+      <PackagePath>black-leather-texture-adownload-texture--black-leather-background-download-photo-black-npgajgga.jpg</PackagePath>
+      <Modified>2013-12-06T14:08:18.406</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-12-05T12:02:26.042</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-07-26T19:24:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-12-06T14:16:48.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rosario\documents\visual studio 2012\Projects\Image Normalization for Windows 8\Image Normalization for Windows 8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-12-06T14:09:32.224</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

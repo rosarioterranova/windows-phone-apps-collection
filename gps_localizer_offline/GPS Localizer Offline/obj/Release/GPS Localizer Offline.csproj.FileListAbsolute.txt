@@ -1,0 +1,137 @@
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\App.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\About.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\MainPage.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.g.resources
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS_Localizer_Offline.Resources.AppResources.resources
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.csproj.GenerateResource.Cache
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\GPS Localizer Offline.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\GPS Localizer Offline.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\AppManifest.xaml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\GPS_Localizer_Offline_Release_AnyCPU.xap
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Behaviors.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Controls.Primitives.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Core.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\System.Windows.Interactivity.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Behaviors.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Behaviors.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Controls.Primitives.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Controls.Primitives.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Core.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Core.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\de-DE\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fr-FR\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\it-IT\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\obj\Release\XapCacheFile.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Microsoft.Advertising.Mobile.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\microsoft.advertising.mobile.ui.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Microsoft.Advertising.Mobile.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\microsoft.advertising.mobile.ui.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\da-DK\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\de-DE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\el-GR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\en-GB\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\es-ES\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\it-IT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-TW\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\GPS Localizer Offline.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\GPS Localizer Offline.pdb
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\AppManifest.xaml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\GPS_Localizer_Offline_Release_AnyCPU.xap
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Behaviors.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Controls.Primitives.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Core.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\System.Windows.Interactivity.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Microsoft.Advertising.Mobile.xml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\microsoft.advertising.mobile.ui.xml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Behaviors.pdb
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Behaviors.xml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Controls.Primitives.pdb
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Controls.Primitives.xml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Core.pdb
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\Telerik.Windows.Core.xml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\da-DK\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\de-DE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\el-GR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\en-GB\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\es-ES\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\it-IT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-TW\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\de-DE\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fr-FR\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\it-IT\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\App.g.cs
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\About.g.cs
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\MainPage.g.cs
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.g.resources
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS_Localizer_Offline.Resources.AppResources.resources
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.csproj.GenerateResource.Cache
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.dll
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.pdb
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\XapCacheFile.xml
+C:\Users\Rosario\Desktop\GPS Localizer Offline\GPS Localizer Offline\obj\Release\GPS Localizer Offline.csprojResolveAssemblyReference.cache

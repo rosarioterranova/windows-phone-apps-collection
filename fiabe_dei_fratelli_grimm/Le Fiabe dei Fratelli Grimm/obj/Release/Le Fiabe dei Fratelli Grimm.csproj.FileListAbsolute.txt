@@ -1,0 +1,176 @@
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ApplicationIcon.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Background.png
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Le Fiabe dei Fratelli Grimm.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Le Fiabe dei Fratelli Grimm.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\AppManifest.xaml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Le_Fiabe_dei_Fratelli_Grimm.xap
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Advertising.Mobile.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\microsoft.advertising.mobile.ui.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Behaviors.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Controls.Primitives.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Core.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\System.Windows.Interactivity.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Advertising.Mobile.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\microsoft.advertising.mobile.ui.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.Maps.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Behaviors.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Behaviors.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Controls.Primitives.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Controls.Primitives.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Core.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Core.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\System.Windows.Interactivity.xml
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\da-DK\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\de-DE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\el-GR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\en-GB\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\es-ES\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\it-IT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-TW\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\de-DE\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\fr-FR\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\it-IT\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\obj\Release\App.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\obj\Release\Fiabe.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\obj\Release\MainPage.g.cs
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\obj\Release\Le Fiabe dei Fratelli Grimm.g.resources
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\obj\Release\Le Fiabe dei Fratelli Grimm.dll
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\obj\Release\Le Fiabe dei Fratelli Grimm.pdb
+C:\Users\Rosario\documents\visual studio 2012\Projects\Le Fiabe dei Fratelli Grimm\Le Fiabe dei Fratelli Grimm\obj\Release\XapCacheFile.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ApplicationIcon.png
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Background.png
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Le Fiabe dei Fratelli Grimm.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Le Fiabe dei Fratelli Grimm.pdb
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\AppManifest.xaml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Le_Fiabe_dei_Fratelli_Grimm.xap
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Advertising.Mobile.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\microsoft.advertising.mobile.ui.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Behaviors.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Controls.Primitives.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Core.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\System.Windows.Interactivity.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Advertising.Mobile.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\microsoft.advertising.mobile.ui.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Microsoft.Phone.Controls.Maps.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Behaviors.pdb
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Behaviors.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Controls.Primitives.pdb
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Controls.Primitives.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Core.pdb
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\Telerik.Windows.Core.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\System.Windows.Interactivity.xml
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\da-DK\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\de-DE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\el-GR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\en-GB\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\es-ES\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\it-IT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-TW\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\de-DE\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\fr-FR\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\it-IT\Telerik.Windows.Controls.Primitives.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\obj\Release\App.g.cs
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\obj\Release\Fiabe.g.cs
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\obj\Release\MainPage.g.cs
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\obj\Release\Le Fiabe dei Fratelli Grimm.g.resources
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\obj\Release\Le Fiabe dei Fratelli Grimm.dll
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\obj\Release\Le Fiabe dei Fratelli Grimm.pdb
+C:\Users\Rosario\Documents\Visual Studio 2012\Projects\Le Fiabe dei Fratelli Grimm PRO\Le Fiabe dei Fratelli Grimm\obj\Release\XapCacheFile.xml

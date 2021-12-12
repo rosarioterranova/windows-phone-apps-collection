@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="it-IT" />
+  <App xmlns="" ProductID="{c85adbcf-f26c-4eeb-a665-a98fb872f569}" Title="Image Normalization" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Rosario Terranova" Description="" Publisher="Rosario Terranova" BitsPerPixel="32" PublisherID="{87685f4c-e909-4a9a-99d5-a101d7caf568}">
+    <IconPath IsRelative="true" IsResource="false">iconab.png</IconPath>
+    <Capabilities></Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="Image_NormalizationToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsResource="false" IsRelative="true">iconac.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsResource="false" IsRelative="true">iconac.png</BackgroundImageURI>
+          <Title>Image Normalization</Title>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
+          <HasLarge>false</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.0.9900 -->
